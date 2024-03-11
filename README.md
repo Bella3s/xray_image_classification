@@ -9,13 +9,14 @@ This project goes through a model iteration process, starting with a very basic 
 
 ### Repository Structure
 
-
-├── [chest_xray](https://github.com/Bella3s/xray_image_classification/tree/main/chest_xray)
-├── [images]()
-├── [pdfs]()
-├── [README.md](https://github.com/Bella3s/xray_image_classification/blob/main/README.md)
-├── [index.ipynb](https://github.com/Bella3s/xray_image_classification/blob/main/index.ipynb)
-
+```
+├── chest_xray (https://github.com/Bella3s/xray_image_classification/tree/main/chest_xray)
+├── images ()
+├── pdfs ()
+├── README.md (https://github.com/Bella3s/xray_image_classification/blob/main/README.md)
+├── google_colab_setup.ipynb (https://github.com/Bella3s/xray_image_classification/blob/main/google_colab_setup.ipynb) 
+├── index.ipynb (https://github.com/Bella3s/xray_image_classification/blob/main/index.ipynb)
+```
 
 ## Pneumonia, UNICEF, and Nerual Labs Africa
 
@@ -95,11 +96,18 @@ Recall and precision are both important in this senario, hense the use of the F1
 
 ## Final Model Evaluation
 
-<img src=images/final_model_test_eval.png>
+<img src=images/final_model_test_eval.png, width=45%, align="left">
+<img src=images/cm_xrays.png, width=45%, align="right">
+
+As we can see from the image above, our model performed worse on our test data than on the validation data.  While this is slightly expected, these results are not quite as performant as we would like. 
+
+We can see from the x-ray examples of each confusion matrix category that these images are quite difficult to differentiate without a trained eye.  Let’s take a look at the model structure and the model’s activation layers to get a better understanding of how the model is making its predictions. 
 
 <img src=images/model.png>
 
 <img src=images/activation_layers.png>
+
+We can see that, as expected, the model is abstracting the image as we go further along through the activation levels. We can also see that the model is taking into consideration the area outside of the lungs, namely on the left + right side of the image outside of the body cavity as well as the area below the ribcage. These areas have no bearing on diagnosis, and the size and quality vary from x-ray to x-ray.
 
 
 ## Conclusion + Recommendations
