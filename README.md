@@ -98,8 +98,8 @@ Recall and precision are both important in this senario, hense the use of the F1
 
 ## Final Model Evaluation
 
-<img src=images/final_model_test_eval.png width=48%, align="left">
-<img src=images/cm_xrays.png width=48%, align="center">
+<img src=images/final_model_test_eval.png width=60%, align="left">
+<img src=images/cm_xrays.png width=38%, align="center">
 
 As we can see from the image above, our model performed worse on our test data than on the validation data.  While this is slightly expected, these results are not quite as performant as we would like. 
 
