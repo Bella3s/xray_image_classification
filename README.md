@@ -26,13 +26,13 @@ Pneumonia is the cause of death for over 725,000 children under the age of 5 wor
 
 One of the most common ways to diagnosis if a patient has contracted pneumonia is to examine a chest x-ray, looking for white spots in the lungs (called infiltrates) ([RadiologyInfo.org](https://www.radiologyinfo.org/en/info/pneumonia#:~:text=When%20interpreting%20the%20x%2Dray,(fluid%20surrounding%20the%20lungs).)).
 
-<img src=images/pneumonia_map.png>
+<img src=images/pneumonia_map.png width=60%>
 
 A vast majority of deaths caused by pneumonia are concentrated in the world's poorest countries (southern Asia and sub-Saharan Africa), where there is a lack of robust health care systems. This includes a shortage of doctors and lack of access to x-rays and labs. This lack of a health care system is one of the main reasons that pneumonia kills so many children even when the treatment is known and easy to administer. 
 
 One of the ways that UNICEF is actively fighting the number of deaths by pneumonia is by investing in companies like [Neural Labs Africa](https://neurallabs.africa/#) through their [Venture Fund](https://www.unicef.org/innovation/venturefund/ai-ds-learning-health-cohort). Neural Labs Africa is working to leverage AI to "democratize access to diagnostic healthcare" and improve patient care. Their product NeuralSight for Chest Imaging is capable of identifying, labeling and highlighting over 20 respiratory diseases, including pneumonia. 
 
-<img src=images/neuralsight_xray.png>
+<img src=images/neuralsight_xray.png width=60%>
 
 While what Neural Labs Africa is accomplishing is widely outside the scope of this project, it does serve as the inspiration.  The idea of expanding health care to areas that most need it through machine learning by offering real time diagnoses from a simple x-ray image. 
 
@@ -63,12 +63,12 @@ As mentioned above, the initial exploration of the data lead to the discovery th
 
 This is a fairly large dataset, with 4,696 images in the train set, 536 in the validation, and 624 in the test, for a total of 5,8856 images
 
-<img src=images/normal_xray_pixel_dist.png width=45% align="left">
-<img src=images/pneumonia_xray_pixel_dist.png width=45% align="right">
+<img src=images/normal_xray_pixel_dist.png width=50% align="left">
+<img src=images/pneumonia_xray_pixel_dist.png width=50% align="right">
 
 In the above images we can see the pixel distribution for an x-ray with out pneumonia and an x-ray with pneumonia. We can see that the normal x-ray has more pixels with a 0 value (absolute black) than the x-ray with pneumonia.
 
-<img src=images/target_dist.png width=45%>
+<img src=images/target_dist.png width=45>
 
 We also found that there is quite an imbalance in the target distribution, with only 23% of the training images being in the normal class, and 77% being x-rays with pneumonia present. With image processing, we will be using Neural Networks. The idea we move forward with in this project is that these complex neural network models will be able to overcome this imbalance. However, we can always circle back and either downsample or perform data augmentation to address this imbalance if needed.
 
@@ -96,8 +96,8 @@ Recall and precision are both important in this senario, hense the use of the F1
 
 ## Final Model Evaluation
 
-<img src=images/final_model_test_eval.png, width=45%, align="left">
-<img src=images/cm_xrays.png, width=45%, align="right">
+<img src=images/final_model_test_eval.png, width=50%, align="left">
+<img src=images/cm_xrays.png, width=50%, align="right">
 
 As we can see from the image above, our model performed worse on our test data than on the validation data.  While this is slightly expected, these results are not quite as performant as we would like. 
 
