@@ -63,8 +63,8 @@ As mentioned above, the initial exploration of the data lead to the discovery th
 
 This is a fairly large dataset, with 4,696 images in the train set, 536 in the validation, and 624 in the test, for a total of 5,8856 images.
 
-<img src=images/normal_xray_pixel_dist.png width=45% align="left">
-<img src=images/pneumonia_xray_pixel_dist.png width=49% align="center">
+<img src=images/normal_xray_pixel_dist.png width=48% align="left">
+<img src=images/pneumonia_xray_pixel_dist.png width=48% align="center">
 
 
 In the above images we can see the pixel distribution for an x-ray with out pneumonia and an x-ray with pneumonia. We can see that the normal x-ray has more pixels with a 0 value (absolute black) than the x-ray with pneumonia.
