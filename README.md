@@ -12,7 +12,7 @@ This project goes through a model iteration process, starting with a very basic 
 ```
 ├── chest_xray (https://github.com/Bella3s/xray_image_classification/tree/main/chest_xray)
 ├── images (https://github.com/Bella3s/xray_image_classification/tree/d1b37c59c035a1a0b05b24ba8345585b693f13dc/images)
-├── pdfs ()
+├── pdfs (https://github.com/Bella3s/xray_image_classification/tree/main/pdfs)
 ├── README.md (https://github.com/Bella3s/xray_image_classification/blob/main/README.md)
 ├── google_colab_setup.ipynb (https://github.com/Bella3s/xray_image_classification/blob/main/google_colab_setup.ipynb) 
 ├── index.ipynb (https://github.com/Bella3s/xray_image_classification/blob/main/index.ipynb)
